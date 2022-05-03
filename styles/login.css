@@ -1,0 +1,115 @@
+/* Cores */
+:root {
+  --fundo-primario: #29a0b1;
+  --fundo-secundario: #167d7f;
+  --cor-texto: #e8f1f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--fundo-primario);
+  background-image: url("../images/pinheiros.jpg");
+  color: var(--cor-texto);
+  font-size: clamp(0.8em, 2vw, 1.2em);
+}
+
+main {
+  min-width: 360px;
+  max-width: 800px;
+  width: 80% !important;
+  margin: 1em auto;
+  padding: 1.5em;
+  background-color: var(--fundo-secundario);
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 360px) {
+  main {
+    margin: 1em auto;
+  }
+}
+
+form, button {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Links */
+a {
+  color: var(--fundo-primario);
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--roxo);
+}
+
+/* Outras coisas */
+hr {
+  width: 100%;
+  background-color: var(--cor-texto);
+}
+
+button {
+  margin: .25rem .125rem;
+  padding: 0.375rem 0.75rem;
+  background-color: #0d6efd;
+  border: 1px solid #0d6efd;
+  border-radius: 0.25rem;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4em;
+}
+
+input, select {
+  padding: 0.5em;
+  margin-bottom: 1.2em;
+  border: 3px solid var(--fundo-primario);
+  border-radius: 10px;
+}
+
+input {
+  width: 100% !important;
+}
+
+.acoluna2 {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.acoluna2 *:last-child {
+  text-align: right;
+}
+
+.centraliza {
+  text-align: center;
+}
+
+.inline {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.8em;
+}
+
+
+
+#nome_site {
+  display: inline;
+  vertical-align: bottom;
+}
